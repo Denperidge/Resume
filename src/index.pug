@@ -7,5 +7,29 @@ html(lang="en")
         title Denperidge's resume
         link(rel="stylesheet", href="stylesheet.scss")
     body
-        h1 Denperidge
-        include:markdown-it content/about.md
+        main
+            h1 Denperidge
+            section#about 
+                include:markdown-it content/about.md
+
+            p I created this website to function as my resume. So, what can you expect from hiring me?
+            
+            // General work skills
+            section#workskills
+                h2 Work skills
+                include:markdown-it content/skills.md
+            
+            // Experience 
+            section#experience
+                h2 Work skills
+                include:markdown-it content/skills.md
+            
+            
+            
+            // Projects
+            section#programming 
+
+            // Things I have an eye for
+            section#eye 
+
+            
