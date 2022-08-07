@@ -1,6 +1,0 @@
-- Focused on inclusivity
-- Good at teamwork and collaboration
-- Detailed worker
-- Eager to learn and improve
-- Well versed in English and Dutch
-- Very basic communication in French

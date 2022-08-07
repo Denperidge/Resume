@@ -1,0 +1,32 @@
+
+mixin pe(years, title, employer, ...tasks)
+    article 
+        details
+            summary #{years} - #{title} - #{employer}
+            h3 My responsibilities:
+            ul
+                each task in tasks
+                    li= task
+            if block
+                block
+mixin pelist(title, ...items)
+    h3= title 
+    ul
+        each item in items 
+            li= item
+        
+
++pe(
+    '2018-21', 'Programmer & ICT consultant', 'Guestcam',
+    'Creating digital experiences ',
+    'Solo development of web applications',
+    'Building responsive and svg-based front-ends based on Photoshop mock-ups',
+    'Troubleshooting portable Windows-based machines (through TeamViewer, telephone, and on location)'
+)
+    +pelist('Lessons learned', 'Making things work.', 'meow')
+    
+    
++pe(
+    '2021', 'Web developer (solo)', 'Audiosense'
+)
+        
