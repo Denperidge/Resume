@@ -2,7 +2,6 @@
   "name": "denperidge-resume",
   "version": "1.0.0",
   "description": "Denperidge's resume/cv/why to hire them (me)",
-  "main": "index.js",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.3",
     "acorn": "^8.8.0",
