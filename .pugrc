@@ -1,0 +1,24 @@
+{
+    "locals": {
+        "languages": [
+            "Python         - 95",
+            "HTML           - 100 - Semantic & accessible HTML",
+            "SCSS           - 90 - (S)CSS",
+            "JavaScript     - 100 - (Node.)JS, jQuery",
+            "Git            - 85 - Git CLI, VSCode interface",
+            "GitHub         - 90 - GitHub Pages, Issues, Wiki, Actions...",
+            "Electron       - 70",
+            "CSharp         - 75 - C# (Console, Winforms, WPF)",
+            "Docker         - 80 - DevOps: Docker, Gulp, Parcel...",
+            "Scripting      - 85 - Bash, Batch",
+
+            "PHP            - 70 - PHP & Laravel",
+            "Cordova        - 65",
+            "Java           - 70 - Java Web/Android",
+            
+            "Databases      - 70 - Databases: MySQL/MongoDB",
+            "CLI            - 80 - Command Line (Bash, Batch, PowerShell)",
+            "Django         - 65"
+        ]
+    }
+}

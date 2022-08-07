@@ -1,0 +1,14 @@
+ul
+    for language in languages
+        - let info = language.split('-');
+        - let label = info[0].trim();
+        - let value = info[1].trim()
+        li
+            label
+                img(src=`./assets/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
+                if info.length <= 2
+                    label= label 
+                else
+                    label= info[2]
+            progress(value=value max="100")
+    
