@@ -3,10 +3,12 @@ div
         - let info = language.split('-');
         - let label = info[0].trim();
         - let value = info[1].trim()
+        - let colour = info[2].trim();
         div
             img(src=`./assets/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
-        if info.length <= 2
+        if info.length <= 3
             label= label 
         else
-            label= info[2]
-        progress(value=value max="100")
+            label= info[3]
+        svg.progress
+            rect(width=`${value}%` height="100%" style=`fill: ${colour};`)

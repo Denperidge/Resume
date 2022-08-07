@@ -13,10 +13,23 @@ main {
             display: flex;
             justify-content: right;
             align-items: center;
-            img {
-                width: auto;
-                height: 25px
-            }
+        }
+
+        img, .progress {
+            height: 25px;
+        }
+
+        img {
+            width: auto;
+        }
+
+        .progress {
+            
         }
     }
+}
+
+.progress {
+    border: 1px solid #e5e5e5;
+    background-color: #f2f2f2;
 }
