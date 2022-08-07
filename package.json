@@ -91,6 +91,7 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
+    "@parcel/transformer-css": "^2.7.0",
     "@parcel/transformer-pug": "^2.7.0",
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0"
