@@ -1,5 +1,22 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
 #programming-languages {
-    img {
-        height: 25px;
+    > div {
+        display: grid;
+        grid-template-columns: 10% 20% 60%;
+        column-gap: 25px;
+        row-gap: 5px;
+        div {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            img {
+                width: auto;
+                height: 25px
+            }
+        }
     }
 }
