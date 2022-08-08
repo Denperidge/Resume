@@ -13,7 +13,13 @@ mixin skillbar(skills, directory)
                 label= info[3]
             div 
                 svg.progress
-                    - let style;
-                    - if (colour.indexOf(',') == -1) style = `fill: ${colour};`;
-                    - else style = `fill: linear-gradient(${colour});`;
-                    rect(width=`${value}%` height="100%" style=style)
+                    if colour.indexOf(',') != -1
+                        defs
+                            - let urlLabel = label.replace(/ /g, '');
+                            linearGradient(id=urlLabel)
+                                - let colourstops = colour.split(',')
+                                for colourstop, index in colourstops
+                                    stop(stop-color=colourstop offset=`${index*(100/colourstops.length)}%`)
+                                - colour = `url(#${urlLabel})`;
+
+                    rect(width=`${value}%` height="100%" style=`fill: ${colour};`)
