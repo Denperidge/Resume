@@ -27,3 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 #about {
     text-align: center;
 }
+
+@media print {
+    body {
+        padding: 0;
+    }
+    main {
+        box-shadow: none;
+        width: 100vw;
+    }
+}
