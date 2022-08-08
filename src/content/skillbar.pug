@@ -1,4 +1,4 @@
-mixin skillbar(skills)
+mixin skillbar(skills, directory)
     .skillbar-container
         for skill in skills
             - let info = skill.split('-');
@@ -6,11 +6,14 @@ mixin skillbar(skills)
             - let value = info[1].trim()
             - let colour = info[2].trim();
             div
-                img(src=`./assets/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
+                img(src=`./assets/${directory}/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
             if info.length <= 3
                 label= label 
             else
                 label= info[3]
             div 
                 svg.progress
-                    rect(width=`${value}%` height="100%" style=`fill: ${colour};`)
+                    - let style;
+                    - if (colour.indexOf(',') == -1) style = `fill: ${colour};`;
+                    - else style = `fill: linear-gradient(${colour});`;
+                    rect(width=`${value}%` height="100%" style=style)
