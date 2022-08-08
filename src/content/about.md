@@ -7,10 +7,3 @@ Hi, I'm Cat! My programming handle is Denperidge.
 - My pronouns are she/they.
 - You can find me on [GitHub](https://github.com/Denperidge), or contact me through denperidge@gmail.com.
 
-
-## Work skills
-- Good at teamwork and collaboration
-- Fluent in English and Dutch
-- Eager to learn and improve
-- Detailed worker
-- Focused on inclusivity
