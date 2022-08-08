@@ -12,20 +12,21 @@ mixin pelist(title, ...items)
         each item in items 
             li= item
 
-- let employmentTitles = Object.keys(pastEmployments);
-each employmentTitle in employmentTitles
-    article 
-        details 
-            summary= employmentTitle
-            - let detailTitles = Object.keys(pastEmployments[employmentTitle])
-            for detailTitle in detailTitles 
-                h3=detailTitle
-                - let details = pastEmployments[employmentTitle][detailTitle]
-                ul
-                    for detail in details
-                        li= detail 
+mixin past(pastList)
+    - let pastTitles = Object.keys(pastList);
+    each pastTitle in pastTitles
+        article 
+            details 
+                summary= pastTitle
+                - let detailTitles = Object.keys(pastList[pastTitle])
+                for detailTitle in detailTitles 
+                    h3=detailTitle
+                    - let details = pastList[pastTitle][detailTitle]
+                    ul
+                        for detail in details
+                            li= detail 
 
-    
++past(pastEmployments)
 
 
 //+pe('2021, 22', 'Web developer (team)', 'Open Summer Of Code')
