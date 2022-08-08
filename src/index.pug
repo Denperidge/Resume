@@ -20,6 +20,7 @@ html(lang="en")
                 h2 An eye for...
                 include:markdown-it content/eye.md
 
+            include content/past.pug
             
             // General work skills
             section#workskills
@@ -28,7 +29,7 @@ html(lang="en")
             // Experience 
             section#experience
                 h2 Work experience 
-                include content/past-employment.pug
+                +past(pastEmployments)
             
             
             include content/skillbar

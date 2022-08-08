@@ -1,0 +1,27 @@
+
+mixin pe(years, title, employer, ...tasks)
+    article 
+        details
+            summary #{years} - #{title} - #{employer}
+            if block
+                block
+            
+mixin pelist(title, ...items)
+    h3= title 
+    ul
+        each item in items 
+            li= item
+
+mixin past(pastList)
+    - let pastTitles = Object.keys(pastList);
+    each pastTitle in pastTitles
+        article 
+            details 
+                summary= pastTitle
+                - let detailTitles = Object.keys(pastList[pastTitle])
+                for detailTitle in detailTitles 
+                    h3=detailTitle
+                    - let details = pastList[pastTitle][detailTitle]
+                    ul
+                        for detail in details
+                            li= detail 
