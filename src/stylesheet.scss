@@ -1,4 +1,5 @@
-@use 'mixins/skillbar.scss';
+@use 'styles/skillbar.scss';
+@use 'styles/tiles.scss';
 
 body {
     padding-top: 15px;
@@ -17,3 +18,4 @@ main {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre Bodoni', serif, system-ui, -apple-system;
 }
+
