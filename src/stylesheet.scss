@@ -8,9 +8,10 @@ body {
 }
 
 main {
-    width: 80%;
+    $sidepadding: 50px;
+    width: calc(75% - $sidepadding);
     margin: auto;
-    padding: 7.5px 25px;
+    padding: 7.5px $sidepadding;
 
     font-family: 'Tiro Tamil', serif, system-ui, -apple-system;
 
