@@ -1,35 +1,6 @@
+@use 'mixins/skillbar.scss';
+
 main {
     width: 80%;
     margin: auto;
-}
-
-.skillbar-container {
-    > div {
-        display: grid;
-        grid-template-columns: 10% 20% 60%;
-        column-gap: 25px;
-        row-gap: 5px;
-        div {
-            display: flex;
-            justify-content: right;
-            align-items: center;
-        }
-
-        img, .progress {
-            height: 25px;
-        }
-
-        img {
-            width: auto;
-        }
-
-        .progress {
-            
-        }
-    }
-}
-
-.progress {
-    border: 1px solid #e5e5e5;
-    background-color: #f2f2f2;
 }
