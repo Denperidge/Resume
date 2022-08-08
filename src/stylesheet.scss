@@ -9,21 +9,56 @@ body {
     background-size: 100% 100%;
 }
 
-main {
+main, footer {
     $sidepadding: 50px;
     width: calc(75% - $sidepadding);
     margin: auto;
     padding: 7.5px $sidepadding;
 
     font-family: 'Tiro Tamil', serif, system-ui, -apple-system;
+}
 
+main {
     background-color: #fbfbfb;
     box-shadow: 10px 0px 20px vars.$first, -10px -10px 20px vars.$first;
+}
 
+footer {
+    font-size: 90%;
+}
+
+section {
+    margin-bottom: 40px,
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre Bodoni', serif, system-ui, -apple-system;
+}
+
+details {
+    padding: 12.5px;
+    margin: 12.5px;
+
+    border: 2px solid vars.$second;
+    border-radius: 4px;
+
+    *:not(summary) {
+        margin: auto;
+        width: 80%;
+    }
+
+    
+    h3 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    [open] {
+        summary {
+            border-bottom: 1px solid vars.$second;
+        }
+    }
 }
 
 #about {
