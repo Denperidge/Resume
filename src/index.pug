@@ -19,23 +19,15 @@ html(lang="en")
 
                 include:markdown-it content/about.md
             
-            // Things I have an eye for
             section#eye
                 h2 An eye for...
                 include:markdown-it content/eye.md
-            
-            // General work skills
-            section#workskills
-                //h2 Work skills
-            
-            // Experience 
+
             section#experience
                 h2 Work experience 
                 +past(pastEmployments)
             
         
-            
-            // Programming
             section#programming-languages
                 h2 Programming languages 
                 +skillbar(languages, 'programming')
