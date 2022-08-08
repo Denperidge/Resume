@@ -5,7 +5,7 @@ Hi, I'm Cat! My programming handle is Denperidge.
 - I'm a programmer with a background in multimedia.
 - I am creative!
 - My pronouns are she/they.
-- You can find me on [GitHub](https://github.com/Denperidge).
+- You can find me on [GitHub](https://github.com/Denperidge), or contact me through denperidge@gmail.com.
 
 
 ## Work skills

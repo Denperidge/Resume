@@ -1,0 +1,11 @@
+### Accessibility
+Contrast checking, semantic HTML, pausable animations. Everything and everyone should strive to include as many people as possible. No birth condition or life-changing accident should prohibit people from doing what they love, let alone must.
+
+### Performance and scalability
+Logos in SVG, images compressed, code documented and following DRY, client-side code minimised, deployment automated. Markdown over proprietary binary formats like .docx, long-term reliable hosting like GitHub pages. Everything can - and should - be built to be pleasant for everyone involved: producer or consumer.
+
+### Readable HTML
+Frameworks are great: they're community-tested, well mantained and designed, and can be a huge timesaver. But as [the example on the bottom of the PicoCSS website](https://picocss.com/) examplifies, there is an increasing problem of unmaintainable HTML that's written in function of a single framework. Getting to create beautiful custom designs, and having the HTML and CSS grow together, is underappreciated.
+
+### Being unique and creative!
+In an industry ruled by big budgets and safe decisions, I'd like to add to the weird stuff. The times of useless gifs and easter eggs, hidden messages to cheer up someones day, customisable profiles, app themes. Self expression deserves a place in tech.
