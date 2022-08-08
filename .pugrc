@@ -33,6 +33,29 @@
 
             "UXUI Design        - 70 - #F24E1E,#A259FF,#0ACF83,#FF7262,#1ABCFE - UX/UI Design: Adobe Illustrator & InDesign & XD, Figma",
             "Physical video     - 55 - #BA683D,#DF6D36,#A7423B - Assembling & handling professional equipment"
-        ]
+        ],
+
+        "pastEmployments": {
+
+            "2021, 22 - Web developer (team) - Open Summer Of Code":{
+                "My responsibilities:": [
+                    "Writing documentation, attending seminars, client meetings.",
+
+                    "(21) Create an application that parses academic papers' sources.",
+                    "(21) Research: API's, citation styles, client needs.",
+                    "(21) Development: Working on a front-end and programmatic interface.",
+
+                    "(22) Creating a working proof-of-concept that integrates Solidpods and Linked Data.",
+                    "(22) Linking the front- and back-end, researching API's and Solidpods."
+                ],
+                "What did I learn?": [
+                    "Importance of future-proofing and ensuring your projects longevity.",
+                    "Improved documentation efficiency through Notion, Gitbook, GitHub Pages, etc.",
+                    "Creating an accepting work environment is important for productivity!",
+                    "Continuous learning through hands-on projects.",
+                    "Importance of focusing on the end user experience."
+                ]
+            }
+        }
     }
 }

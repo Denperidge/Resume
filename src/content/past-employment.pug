@@ -5,18 +5,34 @@ mixin pe(years, title, employer, ...tasks)
             summary #{years} - #{title} - #{employer}
             if block
                 block
+            
 mixin pelist(title, ...items)
     h3= title 
     ul
         each item in items 
             li= item
 
-+pe('2021, 22', 'Web developer (team)', 'Open Summer Of Code')
+- let employmentTitles = Object.keys(pastEmployments);
+each employmentTitle in employmentTitles
+    article 
+        details 
+            summary= employmentTitle
+            - let detailTitles = Object.keys(pastEmployments[employmentTitle])
+            for detailTitle in detailTitles 
+                h3=detailTitle
+                - let details = pastEmployments[employmentTitle][detailTitle]
+                ul
+                    for detail in details
+                        li= detail 
+
+    
+
+
+//+pe('2021, 22', 'Web developer (team)', 'Open Summer Of Code')
     h3 My responsibilities:
     ul 
         li Writing documentation, attending seminars, client meetings.
 
-    ol
         li (21) Create an application that parses academic papers' sources.
         li (21) Research: API's, citation styles, client needs.
         li (21) Development: Working on a front-end and programmatic interface.
