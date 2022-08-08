@@ -1,11 +1,18 @@
 .skillbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
     > div {
-        display: grid;
-        grid-template-columns: 10% 20% 60%;
-        column-gap: 25px;
-        row-gap: 5px;
+        width: 100%;
+        @media(orientation: landscape) {
+            width: 45%;
+        }
+        
+
         div {
-            display: flex;
+            //display: flex;
             justify-content: right;
             align-items: center;
         }
@@ -14,8 +21,13 @@
             height: 25px;
         }
 
+        .progress {
+            width: 100%;
+        }
+
         img {
             width: auto;
+            margin-right: 5px;
         }
     }
 }
