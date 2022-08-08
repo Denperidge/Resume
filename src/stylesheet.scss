@@ -1,6 +1,19 @@
 @use 'mixins/skillbar.scss';
 
+body {
+    padding-top: 15px;
+}
+
 main {
     width: 80%;
     margin: auto;
+    padding: 7.5px 25px;
+
+    font-family: 'Tiro Tamil', serif, system-ui, -apple-system;
+
+    background-color: #fbfbfb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Bodoni', serif, system-ui, -apple-system;
 }
