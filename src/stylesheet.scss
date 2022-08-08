@@ -3,7 +3,7 @@ main {
     margin: auto;
 }
 
-#programming-languages {
+.skillbar-container {
     > div {
         display: grid;
         grid-template-columns: 10% 20% 60%;

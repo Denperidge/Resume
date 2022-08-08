@@ -1,0 +1,16 @@
+mixin skillbar(skills)
+    .skillbar-container
+        for skill in skills
+            - let info = skill.split('-');
+            - let label = info[0].trim();
+            - let value = info[1].trim()
+            - let colour = info[2].trim();
+            div
+                img(src=`./assets/${label.toLowerCase()}.svg` alt=`Logo for ${label}`)
+            if info.length <= 3
+                label= label 
+            else
+                label= info[3]
+            div 
+                svg.progress
+                    rect(width=`${value}%` height="100%" style=`fill: ${colour};`)

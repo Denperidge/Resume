@@ -15,7 +15,6 @@ html(lang="en")
             section#about
                 include:markdown-it content/about.md
             
-
             
             // General work skills
             section#workskills
@@ -27,11 +26,16 @@ html(lang="en")
                 include content/past-employment.pug
             
             
+            include content/skillbar
             
             // Programming
             section#programming-languages
                 h2 Programming languages 
-                include content/programming-languages.pug
+                +skillbar(languages)
+            
+            section#skillsets 
+                h2 Skillsets
+                //+skillbar(skillsets)
 
             // Things I have an eye for
             section#eye 
