@@ -11,6 +11,8 @@ html(lang="en")
         main
             p I created this website to function as my resume. So, what can you expect from hiring me?
 
+            include mixins/past
+            include mixins/skillbar
 
             section#about
                 include:markdown-it content/about.md
@@ -19,8 +21,6 @@ html(lang="en")
             section#eye
                 h2 An eye for...
                 include:markdown-it content/eye.md
-
-            include content/past.pug
             
             // General work skills
             section#workskills
@@ -31,8 +31,7 @@ html(lang="en")
                 h2 Work experience 
                 +past(pastEmployments)
             
-            
-            include content/skillbar
+        
             
             // Programming
             section#programming-languages
