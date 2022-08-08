@@ -4,9 +4,13 @@
     ul {
         list-style: none;
         padding: 0;
+        position: relative;
+
+        height: 500px;
+
         li {
-            width: 8vw;
-            height: 8vw;
+            width: 125px;
+            height: 125px;
             padding: 25px;
 
             border-radius: 10px;
@@ -18,25 +22,43 @@
             align-items: center;
         }
 
+        li {
+            position: absolute;
+        }
+
         > :nth-child(1) {
+            top: 5%;
+            right: 20%;
             color: white;
             background-color: vars.$first;
+            z-index: 5;
         }
 
         > :nth-child(2) {
+            top: 20%;
+            left: 10%;
             background-color: vars.$second;
+            z-index: 4;
         }
 
         > :nth-child(3) {
+            top: 50%;
+            left: 60%;
             background-color: vars.$third;
+            z-index: 3;
         }
 
         > :nth-child(4) {
+            left: 30%; bottom: 30%;
             background-color: vars.$fourth;
+            z-index: 2;
         }
 
-        > :nth-child(25) {
+        > :nth-child(5) {
+            right: 0%;
+            bottom: 0%;
             background-color: vars.$fifth;
+            z-index: 1;
         }
 
         

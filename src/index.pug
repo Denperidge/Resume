@@ -11,12 +11,12 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet") 
     body
         main
-            p I created this website to function as my resume. So, what can you expect from hiring me?
-
             include mixins/past
             include mixins/skillbar
 
             section#about(class="tiles")
+                p I created this website to function as my resume. So, what can you expect from hiring me?
+
                 include:markdown-it content/about.md
             
             // Things I have an eye for
