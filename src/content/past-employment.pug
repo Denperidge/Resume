@@ -3,10 +3,6 @@ mixin pe(years, title, employer, ...tasks)
     article 
         details
             summary #{years} - #{title} - #{employer}
-            h3 My responsibilities:
-            ul
-                each task in tasks
-                    li= task
             if block
                 block
 mixin pelist(title, ...items)
@@ -14,19 +10,58 @@ mixin pelist(title, ...items)
     ul
         each item in items 
             li= item
+
++pe('2021, 22', 'Web developer (team)', 'Open Summer Of Code')
+    h3 My responsibilities:
+    ul 
+        li Writing documentation, attending seminars, client meetings.
+
+    ol
+        li (21) Create an application that parses academic papers' sources.
+        li (21) Research: API's, citation styles, client needs.
+        li (21) Development: Working on a front-end and programmatic interface.
+
+        li (22) Creating a working proof-of-concept that integrates Solidpods and Linked Data.
+        li (22) Linking the front- and back-end, researching API's and Solidpods.
+
+
+    h3 What did I learn?
+    ul 
+        li Importance of future-proofing and ensuring your projects longevity.
+        li Improved documentation efficiency through Notion, Gitbook, GitHub Pages, etc.
+        li Creating an accepting work environment is important for productivity!
+        li Continuous learning through hands-on projects.
+        li Importance of focusing on the end user experience.
+
+
++pe('2021', 'Web developer (solo)', 'Audiosense')
+    h3 My responsibilities: 
+    ul 
+        li Creating an at-home hearing test
+        li Integrating a web application into an existing and feature-limited webhost
+        li Scoping out features and expectations with the client
+    
+    h3 What did I learn?
+    ul 
+        li Communicating possibilities and technical limitations with clients (e.g. exact dB levels for users at home)
+        li Anticipating client needs (help with media license usage, design, etc.)
+        li Problem-solving skills related to client expectations
         
 
-+pe(
-    '2018-21', 'Programmer & ICT consultant', 'Guestcam',
-    'Creating digital experiences ',
-    'Solo development of web applications',
-    'Building responsive and svg-based front-ends based on Photoshop mock-ups',
-    'Troubleshooting portable Windows-based machines (through TeamViewer, telephone, and on location)'
-)
-    +pelist('Lessons learned', 'Making things work.', 'meow')
++pe('2018-21', 'Programmer & ICT consultant', 'Guestcam')
+    h3 My responsibilities:
+    ul
+        li Handling the technological side of their projects
+        li Creating interfaces for tablets, touch-screen booths, desktop computers, etc.
+        li Solo development of web applications
+        li Building responsive and svg-based front-ends based on Photoshop mock-ups
+        li Troubleshooting portable Windows-based machines (through TeamViewer, telephone, and on location)
+            
+    h3 What did I learn?
+    ul
+        li Collaboration and communication skills. 
+        li Importance of software licensing.
+        li Increased productivity resulting from clear working hours and a good work-life balance.
+        li Independent working with limited guidance.
+        li Working with limited resources: no access to servers, no financial budget, etc.
     
-    
-+pe(
-    '2021', 'Web developer (solo)', 'Audiosense'
-)
-        
