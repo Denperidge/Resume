@@ -19,8 +19,9 @@ html(lang="en")
 
                 include:markdown-it content/about.md
             
-            section#eye
+            section#eye(class="hidden")
                 h2 An eye for...
+                include mixins/hidden
                 include:markdown-it content/eye.md
 
             section#experience

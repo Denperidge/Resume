@@ -1,0 +1,48 @@
+@use 'vars.scss';
+
+.hidden {
+
+    input[type=checkbox] + label > p {
+        display: none;
+    }
+
+    input[type=checkbox] {
+        display: none;
+        &:checked {
+            & + label p {
+                display: initial;
+            }
+        }
+    }
+    
+
+    /*
+    h3 {
+        + p {
+            overflow: hidden;
+            height: 0px;
+            z-index: 5;
+            
+            background-color: #f0f0f0;
+            border: 1px solid vars.$first;
+
+            &:hover {
+                overflow: visible;
+            }
+
+            
+        }
+
+        &:hover {
+            
+            + p {
+                overflow: visible;
+                height: 300px;
+
+            }
+            
+        }
+    }
+    */
+
+}
