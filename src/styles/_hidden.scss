@@ -29,6 +29,9 @@
         overflow: hidden;
         text-align: center;
         
+        img, h3 {
+            cursor: pointer;
+        }
 
         img {
             width: 50px;
