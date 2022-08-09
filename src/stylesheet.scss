@@ -36,11 +36,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 details {
-    padding: 12.5px;
     margin: 12.5px;
+
+
 
     border: 2px solid vars.$second;
     border-radius: 4px;
+
+    summary {
+        padding: 12.5px;
+        cursor: pointer;
+
+    }
 
     *:not(summary) {
         margin: auto;
