@@ -11,9 +11,11 @@
         position: relative;
         width: 35%;
         // Max-height solution implemented from 
-        max-height: 100px;
+        max-height: 115px;
         padding: 20px;
         margin: 15px;
+
+        cursor: pointer;
 
         @media (orientation: portrait) {
             width: 80%;
@@ -29,10 +31,6 @@
 
         overflow: hidden;
         text-align: center;
-        
-        img, h3 {
-            cursor: pointer;
-        }
 
         img {
             width: 50px;
