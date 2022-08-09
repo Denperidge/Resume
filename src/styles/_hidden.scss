@@ -2,13 +2,23 @@
 
 .hidden {
     position: relative;
-    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
+    
     label {
-        position: absolute;
-        width: 40%;
-        height: 20%;
+        position: relative;
+        width: 35%;
+        height: 100px;
         padding: 20px;
+        margin: 15px;
+
+        @media (orientation: portrait) {
+            width: 80%;
+        }
+
+        display: block;
 
         transition: width 1s, height 1s;
 
@@ -57,8 +67,8 @@
         display: none;  
         &:checked {
             & + label {
-                width: 80%;
-                height: 80%;
+                //width: 80%;
+                height: 350px;
                 z-index: 5;
             }
         }
