@@ -1,46 +1,59 @@
 @use 'vars.scss';
 
 .hidden {
+    position: relative;
+    height: 500px;
 
+    label {
+        position: absolute;
+        width: 40%;
+        height: 20%;
+        padding: 20px;
+
+        transition: width 1s, height 1s;
+
+        background-color: vars.$fourth;
+
+        overflow: hidden;
+        text-align: center;
+        
+        border-radius: 10px;
+
+        img {
+            width: 50px;
+            height: auto;
+            margin: auto;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+
+    input[type=checkbox] {
+        display: none;  
+        &:checked {
+            & + label {
+                width: 80%;
+                height: 80%;
+            }
+        }    
+    }
+
+    
+    
+    /*
     input[type=checkbox] + label > p {
         display: none;
     }
 
+    
     input[type=checkbox] {
         display: none;
         &:checked {
             & + label p {
                 display: initial;
             }
-        }
-    }
-    
-
-    /*
-    h3 {
-        + p {
-            overflow: hidden;
-            height: 0px;
-            z-index: 5;
-            
-            background-color: #f0f0f0;
-            border: 1px solid vars.$first;
-
-            &:hover {
-                overflow: visible;
-            }
-
-            
-        }
-
-        &:hover {
-            
-            + p {
-                overflow: visible;
-                height: 300px;
-
-            }
-            
         }
     }
     */

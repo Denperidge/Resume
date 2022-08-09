@@ -1,9 +1,9 @@
 // Based of https://stackoverflow.com/a/32721572
-mixin hidden()
-    - let id="test"
-    input(type="checkbox" id=`${id}`)
+mixin hidden(logo)
+    input(type="checkbox" id=`${logo}`)
 
-    label(for=`${id}`)
+    label(for=`${logo}`)
+        img(src=`assets/icons/${logo}.svg` alt=`Logo for ${logo}`)
         h3 Accessibility
         p Contrast checking, semantic HTML, pausable animations. Everything and everyone should strive to include as many people as possible. No birth condition or life-changing accident should prohibit people from doing what they love, let alone must.
-+hidden()
++hidden("accessibility")
