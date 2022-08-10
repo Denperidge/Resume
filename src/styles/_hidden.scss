@@ -5,6 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
+    ul {
+        padding: 0px 12px;
+    }
 
     
     label {
@@ -73,6 +77,16 @@
                 max-height: 300px;
                 z-index: 5;
             }
+        }
+    }
+
+    &.large {
+        ul {
+            text-align: left;
+
+        }
+        input[type=checkbox]:checked + label {
+            max-height: 600px;
         }
     }
 

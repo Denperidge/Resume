@@ -13,6 +13,7 @@ html(lang="en")
         main
             include mixins/past
             include mixins/skillbar
+            include mixins/hidden
 
             section#about(class="tiles")
                 p I created this website to function as my resume. So, what can you expect from hiring me?
@@ -43,14 +44,10 @@ html(lang="en")
                 include:markdown-it content/workskills.md
 
 
-            section#learn 
-                h2 Learning
-                include:markdown-it content/learn.md
+            section#learning
+                h2 Knowing new things?
+                include content/learning.pug
 
-
-            section#education 
-                h2 Education
-                include:markdown-it content/education.md
 
         footer
             include:markdown-it content/footer.md
