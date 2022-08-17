@@ -15,7 +15,7 @@
         position: relative;
         width: 35%;
         // Max-height solution implemented from 
-        max-height: 115px;
+        max-height: 100px;
         padding: 20px;
         margin: 15px;
 
@@ -76,17 +76,12 @@
                 //width: 80%;
                 max-height: 300px;
                 z-index: 5;
+                &.large {
+                    max-height: 600px;
+                }
+                
+                //padding-bottom: 250px;
             }
-        }
-    }
-
-    &.large {
-        ul {
-            text-align: left;
-
-        }
-        input[type=checkbox]:checked + label {
-            max-height: 600px;
         }
     }
 
