@@ -45,7 +45,7 @@
     "is-json": "^2.0.1",
     "js-tokens": "^4.0.0",
     "json-parse-even-better-errors": "^2.3.1",
-    "json5": "^2.2.1",
+    "json5": "^2.2.2",
     "jstransformer-markdown-it": "^3.0.0",
     "lines-and-columns": "^1.2.4",
     "lmdb": "^2.5.2",
