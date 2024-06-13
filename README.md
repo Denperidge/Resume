@@ -1,3 +1,6 @@
+# Archival notice
+This repository has been archived! Please update any dependencies to ensure no **security vulnerabilities**
+
 # Denperidge's Resume
 
 This is my resume! A no-javascript website, Parcelled from Pug and SCSS.
